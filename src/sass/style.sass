@@ -1,0 +1,205 @@
+@import './_variables.sass'
+@import '../../node_modules/bootstrap/scss/bootstrap.scss'
+@import './_fonts.sass'
+@import './_icons.sass'
+
+// Navbar
+#nav
+    div
+        a
+            font-family: krona
+            font-size: 300%
+        p
+            font-family: Quicksand
+            letter-spacing: 5px
+            color: rgb(181,23,18,255)
+    div
+        div
+            a
+                font-size: 12px
+                color: black
+                letter-spacing: 2px
+                &:hover
+                    background-color: black
+                    color: white
+                    transition: all 1s
+.active
+    background-color: black
+    color: white !important
+    
+// Contact Fixed
+#aside
+    div
+        position: fixed
+        bottom: 30px
+        right: 30px
+        padding: 14px
+        background-color: rgb(181,23,18,255)
+        box-shadow: 2px 2px 2px rgb(181,23,18,255)
+        i
+            color: white
+            font-size: 28px
+// Banner
+#banner
+    z-index: 999
+    div
+        img
+            max-width: 60%
+            height: auto
+    .down
+        i
+            font-size: 20px
+
+// MiniPortofolio
+#MiniPortofolio
+    // margin-top: 7%
+    position: relative
+    .container
+        .row
+            .col-lg-4
+                img
+                    max-width: 100%
+                    max-height: auto
+                &:nth-of-type(2)
+                    margin-top: 50px
+        .titleMini
+            position: absolute
+            top: 45%
+            left: 12%
+            h3
+                font-family: Krona
+                &::before
+                    content: ""
+                    position: absolute
+                    bottom: 0px
+                    width: 50%
+                    height: 3px
+                    left: 0%
+                    background-color: rgb(181,23,18,255)
+                    transition: 2s
+
+// Transition
+#transition
+    div
+        background-image: url('../../public/img/tansitionBanner.jpg')
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        background-attachment: fixed
+        height: 250px
+// Agency
+#agency
+    .container
+        .row
+            margin: 15% 0
+            .col-lg-6
+            &:first-child
+                h3
+                    font-size: 250%
+                    font-family: Krona
+                    text-align: end
+                p 
+                font-family: Quicksand
+                font-size: 20px
+                text-align: end
+                letter-spacing: 0.011111111111111112rem
+                .font-weight-bold
+                    font-size: 25px
+                    color: rgb(181,23,18,255)           
+                                     
+            &:last-child
+                img 
+                    height: 230px
+                    transform: rotate(20deg) 
+                        
+// miniAbout
+#miniAbout
+    .container
+        // padding:  0 130px 0 130px
+        p
+            font-family: Quicksand
+            &:first-child
+                font-size: 0.6666666666666666rem
+                letter-spacing: 3px
+                color: rgb(181,23,18,255)
+            &:nth-last-of-type(2)
+                font-size: 25px
+                letter-spacing: 0.011111111111111112rem
+            &:last-of-type
+                font-size: 0.6666666666666666rem
+                letter-spacing: 3px
+#footer
+    .container
+        p
+            font-family: Quicksand
+            text-align: end
+            font-size: 15px
+            letter-spacing: 5px
+        .start
+            text-align: start !important
+@media ( max-width: 760px)
+    #nav   //Banner
+        margin: 0 !important
+        padding: 0 !important
+
+        div
+            margin-left: 20px
+            a
+                font-family: krona
+                font-size: 25px
+
+            p
+                font-family: Quicksand
+                letter-spacing: 5px
+                font-size: 15px
+
+        div
+            div
+                a
+                    position: relative
+                    right: 0
+
+    #MiniPortofolio //MiniPortfolio
+        position: relative
+        .container
+            .row
+                .col-lg-4
+                    img
+                        max-width: 100%
+                        max-height: auto
+                        margin-top: 50px
+                    &:nth-of-type(2)
+                        margin-top: 0
+            .titleMini
+                position: absolute
+                top: 0%
+                left: 12%
+    #miniAbout
+        .container
+            padding: 0
+            text-align: center
+    #agency
+        .container
+            .row
+                margin: 15% 0
+                .col-lg-6
+                &:first-child
+                    h3
+                        text-align: center !important
+                        font-size: 150%
+                        font-family: Krona
+                        text-align: end
+                    p 
+                        font-family: Quicksand
+                        text-align: center !important
+                        font-size: 15px
+                        text-align: end
+                        letter-spacing: 0.011111111111111112rem
+                    .font-weight-bold
+                        font-size: 20px
+                        color: rgb(181,23,18,255)           
+                                        
+                &:last-child
+                    img 
+                        height: 200px
+                        transform: rotate(20deg)
