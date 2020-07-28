@@ -76,14 +76,14 @@
                     height: 3px
                     left: 0%
                     background-color: rgb(181,23,18,255)
-                    transition: 2s
 
 // Transition
 #transition
     div
         background-image: url('../../public/img/tansitionBanner.jpg')
         background-position: center
-        background-size: cover
+        background-size: 100wh
+        // background-size: cover
         background-repeat: no-repeat
         background-attachment: fixed
         height: 250px
@@ -111,7 +111,37 @@
                 img 
                     height: 230px
                     transform: rotate(20deg) 
-                        
+
+// Service 
+#service
+    position: relative
+    .container
+        .titleMini
+            position: absolute
+            top: 0%
+            left: 12%
+            h3
+                font-family: Krona
+                &::before
+                    content: ""
+                    position: absolute
+                    bottom: 0px
+                    width: 50%
+                    height: 3px
+                    left: 0%
+                    background-color: rgb(181,23,18,255)
+        .logo
+            .row
+                .col-lg-3
+                    font-family: Quicksand
+                    text-align: center
+                    h4 
+
+                    i
+                        font-size: 50px
+                            
+
+
 // miniAbout
 #miniAbout
     .container
@@ -129,14 +159,39 @@
                 font-size: 0.6666666666666666rem
                 letter-spacing: 3px
 #footer
+    .container-fluid
+        h3
+            font-family: Krona
+            position: relative
+            max-width: max-content
+            &::before
+                content: ""
+                position: absolute
+                bottom: 0px
+                width: 30%
+                height: 3px
+                left: 0%
+                background-color: rgb(181,23,18,255)
+            &::after
+                content: ""
+                position: absolute
+                bottom: 0px
+                width: 30%
+                height: 3px
+                right: 0%
+                background-color: rgb(181,23,18,255)
+        p 
+            font-family: Quicksand
     .container
         p
             font-family: Quicksand
             text-align: end
             font-size: 15px
-            letter-spacing: 5px
+            letter-spacing: 3px
         .start
             text-align: start !important
+
+// MEDIA
 @media ( max-width: 760px)
     #nav   //Banner
         margin: 0 !important
@@ -178,7 +233,8 @@
         .container
             padding: 0
             text-align: center
-    #agency
+    #agency //agency
+        margin-bottom: 100px
         .container
             .row
                 margin: 15% 0
@@ -203,3 +259,52 @@
                     img 
                         height: 200px
                         transform: rotate(20deg)
+    #transition
+        div
+            background-size: 580px
+
+@media ( min-width: 761px) and (max-width: 992px)
+    #MiniPortofolio //MiniPortfolio
+        position: relative
+        .container
+            .row
+                .col-lg-4
+                    img
+                        max-width: 100%
+                        max-height: auto
+                        margin-top: 50px
+                    &:nth-of-type(2)
+                        margin-top: 15px
+            .titleMini
+                position: absolute
+                top: 0%
+                left: 12%
+    #agency //agency
+        margin-bottom: 100px
+        .container
+            .row
+                margin: 15% 0
+                .col-lg-6
+                &:first-child
+                    h3
+                        text-align: center !important
+                        font-size: 150%
+                        font-family: Krona
+                        text-align: end
+                    p 
+                        font-family: Quicksand
+                        text-align: center !important
+                        font-size: 15px
+                        text-align: end
+                        letter-spacing: 0.011111111111111112rem
+                    .font-weight-bold
+                        font-size: 20px
+                        color: rgb(181,23,18,255)           
+                                        
+                &:last-child
+                    img 
+                        height: 200px
+                        transform: rotate(20deg)
+    #transition
+        div
+            background-size: 750px
